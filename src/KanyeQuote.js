@@ -10,7 +10,7 @@ class KanyeQuote extends Component {
 
   render () {
     return (
-      <h1>{this.state.quote}</h1>
+      <h2>{this.state.quote}</h2>
     )
   }
 

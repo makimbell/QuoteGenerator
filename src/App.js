@@ -7,38 +7,38 @@ import { Link, Route } from 'react-router-dom'
 
 class App extends Component {
   render () {
-    return <div>
-      <div>
-        <nav>
-          <ul className>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/kanye'>Kanye</Link></li>
-            <li><Link to='/ron-swanson'>Ron Swanson</Link></li>
-            <li><Link to='/breaking-bad'>Breaking Bad</Link></li>
-          </ul>
-        </nav>
-      </div>
+    return <div class='container'>
+      <h1 class='text-center m-5 text-primary'>Quote Generator</h1>
+
       <Route path='/kanye'
         render={() =>
-          <div>
+          <div class='text-center m-5 text-dark'>
             <KanyeQuote />
           </div>
         }
       />
       <Route path='/ron-swanson'
         render={() =>
-          <div>
+          <div class='text-center m-5 text-dark'>
             <RonSwansonQuote />
           </div>
         }
       />
       <Route path='/breaking-bad'
         render={() =>
-          <div>
+          <div class='text-center m-5 text-dark'>
             <BreakingBadQuote />
           </div>
         }
       />
+
+      <div class='container'>
+        <div class='row'>
+          <Link to='/kanye' type='button' class='btn btn-dark btn-lg mx-3 col-sm text'>Kanye</Link>
+          <Link to='/ron-swanson' type='button' class='btn btn-dark btn-lg mx-3 col-sm'>Ron Swanson</Link>
+          <Link to='/breaking-bad' type='button' class='btn btn-dark btn-lg mx-3 col-sm'>Breaking Bad</Link>
+        </div>
+      </div>
     </div>
   }
 }

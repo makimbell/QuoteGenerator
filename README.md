@@ -1,5 +1,5 @@
 # Quote Generator
-## My JavaScript / React Code Louisville Project
+## My JavaScript/React Code Louisville Project
 
 #### Application Summary
 

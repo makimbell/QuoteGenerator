@@ -9,18 +9,20 @@ class BreakingBadQuote extends Component {
   }
 
   render () {
+    // Return an <h2> element with the Breaking Bad quote generated below
     return (
-      <div>
-        <h2>{this.state.quote}</h2>
-      </div>
+      <h2>{this.state.quote}</h2>
     )
   }
 
   async componentDidMount () {
-    // This is called when our component mounts
+    // This is called when the component mounts
+
+    // Call Breaking Bad quote API and parse the JSON file
     const response = await fetch('https://breaking-bad-quotes.herokuapp.com/v1/quotes')
     const json = await response.json()
-    console.log(json)
+
+    // Set state to quote held in json variable
     this.setState({ quote: json[0].quote })
   }
 }

@@ -36,7 +36,7 @@ class App extends Component {
       />
       <div className='container'>
         <div className='row'>
-          <Link to='/kanye' type='button' className='btn btn-dark btn-lg mx-3 col-sm text'>Kanye</Link>
+          <Link to='/kanye' type='button' className='btn btn-dark btn-lg mx-3 col-sm'>Kanye</Link>
           <Link to='/ron-swanson' type='button' className='btn btn-dark btn-lg mx-3 col-sm'>Ron Swanson</Link>
           <Link to='/breaking-bad' type='button' className='btn btn-dark btn-lg mx-3 col-sm'>Breaking Bad</Link>
         </div>

@@ -9,4 +9,8 @@ It designed to fit on any reasonably sized screen by varying the button layout a
 
 #### Requirements
 
-Quote Generator does not require any special resources other than the ability to run a React application.
+In order to run Quote Generator, set up Node.js and NPM (https://nodejs.org/en/), then run the following commands in the root project directory:
+
+`npm install`
+
+`npm start`
